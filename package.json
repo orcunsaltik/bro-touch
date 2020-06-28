@@ -1,0 +1,43 @@
+{
+  "name": "bro-touch",
+  "version": "1.0.0",
+  "description": "for Bro and jQuery",
+  "keywords": ["touch", "mobile", "js", "jQuery", "bro-js"],
+  "main": "main.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/orcunsaltik/bro-touch.git"
+  },
+  "scripts" : {
+    "clean": "gulp clean",
+    "build": "gulp build",
+    "build:jQuery": "gulp build:jQuery",
+    "build:jQuery:pro": "gulp build:jQuery:pro",
+    "build:bro": "gulp build:bro",
+    "build:bro:pro": "gulp build:bro:pro",
+    "check-src": "eslint -c .eslintrc.js main.js -o test/src-err.log",
+    "fixup-src": "eslint -c .eslintrc.js main.js --fix -o test/src-err.log",
+    "check-lib": "eslint -c .eslintrc-node.js gulpfile.js -o test/lib-err.log",
+    "fixup-lib": "eslint -c .eslintrc-node.js gulpfile.js --fix -o test/lib-err.log",
+    "test": "npm run check-src && npm run clean && npm run build"    
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/orcunsaltik/bro-touch/issues"
+  },
+  "homepage": "https://github.com/orcunsaltik/bro-touch#readme",
+  "devDependencies": {
+    "del": "^5.1.0",
+    "eslint": "^7.3.1",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-config-airbnb-base": "^14.1.0",
+    "eslint-plugin-import": "^2.21.2",
+    "gulp": "^4.0.2",
+    "gulp-babel": "^8.0.0",
+    "gulp-if": "^3.0.0",
+    "gulp-rollup-2": "^1.0.8",
+    "gulp-sourcemaps": "^2.6.5",
+    "gulp-terser": "^1.2.0"
+  },
+  "author": "Orçun Saltık <saltikorcun@gmail.com>"
+}
