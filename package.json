@@ -1,6 +1,6 @@
 {
   "name": "bro-touch",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "for Bro and jQuery",
   "keywords": ["touch", "mobile", "js", "jQuery", "bro-js"],
   "main": "main.js",
@@ -11,8 +11,8 @@
   "scripts" : {
     "clean": "gulp clean",
     "build": "gulp build",
-    "build:jQuery": "gulp build:jQuery",
-    "build:jQuery:pro": "gulp build:jQuery:pro",
+    "build:jq": "gulp build:jq",
+    "build:jq:pro": "gulp build:jq:pro",
     "build:bro": "gulp build:bro",
     "build:bro:pro": "gulp build:bro:pro",
     "check-src": "eslint -c .eslintrc.js main.js -o test/src-err.log",
